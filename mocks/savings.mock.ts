@@ -1,0 +1,80 @@
+import { SavingsGoal, MicroSavingsSuggestion } from '../types/savings.types';
+
+export const MOCK_SAVINGS_GOALS: SavingsGoal[] = [
+  {
+    id: 'goal-1',
+    title: 'Emergency Safety Cushion',
+    targetAmount: 50000,
+    currentAmount: 22000,
+    targetDate: '2027-04-01T00:00:00.000Z',
+    category: 'emergency',
+    icon: 'ShieldCheck',
+    color: '#16A34A',
+    isCompleted: false,
+    createdAt: '2026-06-01T00:00:00.000Z',
+  },
+  {
+    id: 'goal-2',
+    title: 'Goa Trip with College Friends',
+    targetAmount: 25000,
+    currentAmount: 18500,
+    targetDate: '2026-12-20T00:00:00.000Z',
+    category: 'vacation',
+    icon: 'Plane',
+    color: '#0284C7',
+    isCompleted: false,
+    createdAt: '2026-07-15T00:00:00.000Z',
+  },
+  {
+    id: 'goal-3',
+    title: 'Noise Cancelling Headphones',
+    targetAmount: 12000,
+    currentAmount: 12000,
+    targetDate: '2026-10-15T00:00:00.000Z',
+    category: 'gadget',
+    icon: 'Headphones',
+    color: '#8B5CF6',
+    isCompleted: true,
+    createdAt: '2026-08-01T00:00:00.000Z',
+  },
+];
+
+export const MOCK_SAVINGS_SUGGESTIONS: MicroSavingsSuggestion[] = [
+  {
+    id: 'sug-1',
+    title: 'Round up grocery change',
+    amount: 15,
+    reason: 'Round up ₹850 grocery spend to nearest ₹100',
+    category: 'groceries',
+    suggestedAt: '2026-10-30T10:15:00.000Z',
+    isAccepted: false,
+  },
+  {
+    id: 'sug-2',
+    title: 'Chai break micro-save',
+    amount: 20,
+    reason: 'Save the price of an evening cutting chai & snack',
+    category: 'food',
+    suggestedAt: '2026-10-29T16:00:00.000Z',
+    isAccepted: false,
+  },
+  {
+    id: 'sug-3',
+    title: 'Daily coffee swap',
+    amount: 50,
+    reason: 'Home-brewed coffee saved you outside spend today',
+    category: 'food',
+    suggestedAt: '2026-10-28T09:30:00.000Z',
+    isAccepted: true,
+  },
+  {
+    id: 'sug-4',
+    title: 'Weekend survival bonus',
+    amount: 100,
+    reason: 'You spent ₹250 less than your ₹1,000 allowance yesterday!',
+    category: 'misc',
+    suggestedAt: '2026-10-27T08:00:00.000Z',
+    isAccepted: false,
+  },
+];
+
